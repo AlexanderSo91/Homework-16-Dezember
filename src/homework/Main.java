@@ -1,44 +1,38 @@
 package homework;
 
 public class Main {
+
+
+
     public static void main(String[] args) {
 
-            task1();
-            task2();
-            task3();
+
+        task1();
+        task2();
+        task3();
+    }
+
+
+
+
+
+    private static void task1() {
+
+        System.out.println("\nЗадача_1");
+
+
+        int year=2021;
+
+        if (year % 4 ==0 && year % 100!= 0 || year % 400==0) {
+            System.out.println(year+ " год является высокосным");
+        } else  {
+            System.out.println(year+ " год не является высокосным");
 
         }
-
-
-
-        public static void task1() {
-
-
-
-            System.out.println("\nЗадача_1");
-            public static void main(String[] args)
-            {
-                LocalDate today = LocalDate.now();
-                if(today.isLeapYear())
-                {
-                    System.out.println("This year is Leap year");
-                }
-                else
-                {
-                    System.out.println("This year is not a Leap year");
-                }
-            }
-        }
-
-
-
-            int year = 2021;
-
-
-        assert year >= 1583;
-        return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 
     }
+
+
 
 
 
