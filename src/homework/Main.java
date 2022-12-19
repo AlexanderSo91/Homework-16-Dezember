@@ -5,9 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
         checkLeapYear(2015);
-        checkApplicationVersion(1,2020);
+        checkApplicationVersion(1, 2020);
 
-        int distance = 20;
+        int distance = 110;
         printDeliveryDays(distance);
     }
 
@@ -22,8 +22,10 @@ public class Main {
         }
     }
 
-    public static void checkApplicationVersion(int clientOS,int clientDeviceYear) {
+    public static void checkApplicationVersion(int clientOS, int clientDeviceYear) {
         System.out.println("\nЗадача_2");
+
+        int year = 2022;
 
         if (clientOS == 0) {
             if (clientDeviceYear < 2022) {
@@ -43,7 +45,7 @@ public class Main {
     }
 
 
-    public static int checkBankCardDeliveryDistance (int deliveryDistance) {
+    public static int calculateDeliveryDays(int deliveryDistance) {
         System.out.println("\nЗадача_3");
 
         int deliveryDays;
@@ -56,11 +58,19 @@ public class Main {
             deliveryDays = 3;
         } else {
             deliveryDays = 0;
+
         }
+
         return deliveryDays;
     }
-    public static void printDeliveryDays ( int deliveryDistance) {
-        System.out.println("Потребуется дней " + checkBankCardDeliveryDistance(deliveryDistance));
+
+    public static void printDeliveryDays(int deliveryDistance) {
+        if (deliveryDistance > 100) {
+            System.out.println(" Нет доставки ");
+        } else {
+            System.out.println("Потребуется дней " + calculateDeliveryDays(deliveryDistance));
+        }
     }
 }
+
 
