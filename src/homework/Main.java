@@ -65,8 +65,10 @@ public class Main {
     }
 
     public static void printDeliveryDays(int deliveryDistance) {
+        System.out.println("\nЗадача_3");
+
         if (deliveryDistance > 100) {
-            System.out.println(" Нет доставки ");
+            System.out.println("Нет доставки ");
         } else {
             System.out.println("Потребуется дней " + calculateDeliveryDays(deliveryDistance));
         }
